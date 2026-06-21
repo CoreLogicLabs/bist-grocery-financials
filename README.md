@@ -1,5 +1,7 @@
 # BIST Food Retail — Quarterly Financial Performance (2021–2025)
 
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://bist-grocery-financials-adibpjmt3tthvq3jtkhtep.streamlit.app/)
+
 Exploratory financial analysis of the four publicly listed Turkish food-retailers,
 across 20 quarters (2021Q1–2025Q4):
 
@@ -24,8 +26,8 @@ so you can read it end-to-end with no setup.
 
 ## Live dashboard
 
-_Coming soon — deploying to Streamlit Community Cloud._
-(Run locally meanwhile: `streamlit run dashboard/app.py`.)
+▶️ **[Open the interactive dashboard](https://bist-grocery-financials-adibpjmt3tthvq3jtkhtep.streamlit.app/)** — hosted on Streamlit Community Cloud.
+(Or run locally: `streamlit run dashboard/app.py`.)
 
 ## Why this is not a trivial dataset
 
