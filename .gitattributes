@@ -1,0 +1,7 @@
+# Normalize line endings across platforms
+* text=auto
+
+# The EDA notebook is the analysis *deliverable*, not source code. Its embedded
+# chart images inflate byte counts, so exclude it from GitHub's language stats
+# (the language bar then reflects the Python pipeline). It still renders normally.
+notebooks/*.ipynb linguist-documentation

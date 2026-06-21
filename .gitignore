@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+*.egg-info/
+.pytest_cache/
+
+# Secrets / credentials — NEVER commit (e.g. borsapy EVDS API key)
+.env
+.env.*
+*.key
+*.secret
+secrets.*
+credentials.*
+
+# Machine-specific / sensitive: combined CA bundle contains local trust-store certs
+data/.cache/
+*.pem
+
+# Raw & derived financial data — regenerated via `python -m src.fetch` / `src.transform`.
+# Not committed: keep the repo free of bulk source data; structure kept via .gitkeep.
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# OS
+.DS_Store
+Thumbs.db

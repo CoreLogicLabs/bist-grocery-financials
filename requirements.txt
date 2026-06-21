@@ -1,0 +1,16 @@
+# Data sources
+borsapy>=0.10          # primary: BIST fundamentals from KAP filings (Apache-2.0)
+yfinance>=1.4          # secondary: Yahoo Finance cross-check (Apache-2.0)
+
+# SSL behind TLS-intercepting AV/proxy (see src/ssl_setup.py)
+truststore>=0.10
+certifi
+
+# Analysis
+pandas>=2.0
+numpy
+matplotlib
+pyarrow                # parquet output (optional)
+
+# Dashboard
+streamlit>=1.30
