@@ -22,11 +22,15 @@ data/.cache/
 *.pem
 
 # Raw & derived financial data — regenerated via `python -m src.fetch` / `src.transform`.
-# Not committed: keep the repo free of bulk source data; structure kept via .gitkeep.
+# Bulk raw KAP data stays out of the repo; structure kept via .gitkeep.
 data/raw/*
 data/processed/*
 !data/raw/.gitkeep
 !data/processed/.gitkeep
+# Exception: the two small derived panels are committed so the live Streamlit
+# dashboard (and a fresh clone) works without first running the pipeline.
+!data/processed/quarterly_panel.csv
+!data/processed/annual_panel.csv
 
 # OS
 .DS_Store

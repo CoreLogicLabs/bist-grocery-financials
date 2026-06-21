@@ -78,10 +78,11 @@ bist-grocery-financials/
 └── README.md
 ```
 
-> **Note on data.** The `data/` directory is **not committed** — raw KAP statements and
-> the derived panels are regenerated locally via the two commands below. This keeps the
-> repository free of bulk source data; the notebook already embeds its charts, so it
-> renders on GitHub without any data files present.
+> **Note on data.** Bulk raw KAP statements are **not committed** — they're regenerated
+> locally via the two commands below, keeping the repo free of source-data dumps. The two
+> small **derived panels** (`quarterly_panel.csv`, `annual_panel.csv`, ~30 KB) *are*
+> committed so the live dashboard and a fresh clone work out of the box. The notebook also
+> embeds its charts, so it renders on GitHub without any data files present.
 
 ## Setup & run
 
